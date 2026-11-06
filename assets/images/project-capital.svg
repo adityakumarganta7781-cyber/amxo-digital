@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chassisGradCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14243A"/>
+      <stop offset="60%" stop-color="#0E1B2D"/>
+      <stop offset="100%" stop-color="#09121E"/>
+    </linearGradient>
+    <linearGradient id="goldCapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E7CD"/>
+      <stop offset="40%" stop-color="#B69A65"/>
+      <stop offset="100%" stop-color="#7A5E2E"/>
+    </linearGradient>
+    <linearGradient id="chartGradientCap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B69A65" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#B69A65" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadowCap" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="580" fill="#0A1422"/>
+
+  <g stroke="#B69A65" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="90" x2="900" y2="90"/>
+    <line x1="0" y1="490" x2="900" y2="490"/>
+    <line x1="90" y1="0" x2="900" y2="0"/>
+    <line x1="810" y1="0" x2="810" y2="580"/>
+  </g>
+
+  <!-- Browser Chassis -->
+  <g transform="translate(45, 35)" filter="url(#shadowCap)">
+    <rect width="810" height="510" rx="14" fill="url(#chassisGradCap)" stroke="#B69A65" stroke-opacity="0.28" stroke-width="1.2"/>
+    
+    <!-- Top Bar -->
+    <path d="M 0 14 C 0 6.268 6.268 0 14 0 L 796 0 C 803.732 0 810 6.268 810 14 L 810 44 L 0 44 Z" fill="#0C1726"/>
+    <line x1="0" y1="44" x2="810" y2="44" stroke="#B69A65" stroke-opacity="0.18" stroke-width="1"/>
+    
+    <circle cx="28" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="44" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="60" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+
+    <rect x="235" y="11" width="340" height="22" rx="11" fill="#14243A" stroke="#B69A65" stroke-opacity="0.22" stroke-width="0.8"/>
+    <text x="405" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85" text-anchor="middle" letter-spacing="1.5">verdantcapital.com // LP-PORTAL</text>
+
+    <!-- Concept Study Stamp -->
+    <rect x="660" y="11" width="128" height="22" rx="4" fill="#B69A65" fill-opacity="0.12" stroke="#B69A65" stroke-opacity="0.35" stroke-width="0.8"/>
+    <text x="724" y="25" font-family="'Manrope', sans-serif" font-size="7.5" fill="#B69A65" font-weight="700" text-anchor="middle" letter-spacing="1">CONCEPT ARCHIVE</text>
+
+    <!-- Portal Header -->
+    <g transform="translate(40, 75)">
+      <text x="0" y="14" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EA" letter-spacing="4">VERDANT CAPITAL PARTNERS</text>
+      <text x="730" y="14" font-family="'Manrope', sans-serif" font-size="9.5" fill="#B69A65" text-anchor="end" letter-spacing="2">FUND IV // LP TERMINAL</text>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#B69A65" stroke-opacity="0.15" stroke-width="1"/>
+    </g>
+
+    <!-- Left Column: Strategy & Core Metrics -->
+    <g transform="translate(40, 140)">
+      <text x="0" y="14" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" letter-spacing="2.5" font-weight="600">[ 02 // INSTITUTIONAL ASSET ALLOCATION ]</text>
+      
+      <text x="0" y="60" font-family="'Cormorant Garamond', serif" font-size="46" fill="#F5F2EA" font-weight="400">Catalyzing Clean</text>
+      <text x="0" y="105" font-family="'Cormorant Garamond', serif" font-size="46" fill="url(#goldCapGrad)" font-style="italic" font-weight="400">Industrial Transformation</text>
+
+      <text x="0" y="145" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300">
+        Institutional LP portal delivering encrypted static data feeds, automated ESG reporting,
+      </text>
+      <text x="0" y="168" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300">
+        and real-time portfolio telemetry for global endowment and sovereign wealth partners.
+      </text>
+
+      <!-- Metric Cards (3 Units) -->
+      <g transform="translate(0, 205)">
+        <rect x="0" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="16" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">AUM DEPLOYED</text>
+        <text x="16" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="#F5F2EA" font-weight="600">$1.84 B</text>
+
+        <rect x="154" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="170" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">NET REALIZED IRR</text>
+        <text x="170" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="url(#goldCapGrad)" font-weight="600">31.4%</text>
+
+        <rect x="308" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="324" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">ESG IMPACT RATING</text>
+        <text x="324" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="#F5F2EA" font-weight="600">99.8 / AAA</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Interactive Vector Performance Telemetry Chart -->
+    <g transform="translate(515, 150)">
+      <rect x="0" y="0" width="255" height="270" rx="8" fill="#0B1522" stroke="#B69A65" stroke-opacity="0.35" stroke-width="1"/>
+      
+      <text x="20" y="30" font-family="'Manrope', sans-serif" font-size="9.5" fill="#B69A65" letter-spacing="1">YIELD VELOCITY // 2022-2026</text>
+      <text x="20" y="55" font-family="'Cormorant Garamond', serif" font-size="26" fill="#F5F2EA" font-weight="600">+24.8% YOY</text>
+
+      <!-- Vector Chart Line with Shaded Area -->
+      <g transform="translate(20, 70)">
+        <path d="M 0 130 C 40 110, 70 120, 110 80 C 150 50, 180 65, 215 20 L 215 140 L 0 140 Z" fill="url(#chartGradientCap)"/>
+        <path d="M 0 130 C 40 110, 70 120, 110 80 C 150 50, 180 65, 215 20" fill="none" stroke="url(#goldCapGrad)" stroke-width="2.5" stroke-linecap="round"/>
+        
+        <circle cx="0" cy="130" r="3.5" fill="#B69A65"/>
+        <circle cx="110" cy="80" r="4" fill="#B69A65"/>
+        <circle cx="215" cy="20" r="5" fill="#F5F2EA" stroke="#B69A65" stroke-width="2"/>
+        
+        <g font-family="'Manrope', sans-serif" font-size="8.5" fill="#8C9AA8">
+          <text x="0" y="158">2022</text>
+          <text x="100" y="158">2024</text>
+          <text x="195" y="158">2026</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Actions Strip -->
+    <g transform="translate(40, 455)">
+      <line x1="0" y1="0" x2="730" y2="0" stroke="#B69A65" stroke-opacity="0.15" stroke-width="1"/>
+      <text x="0" y="24" font-family="'Manrope', sans-serif" font-size="11.5" fill="#D3CABE">
+        Encrypted LP data room access with multi-factor institutional authorization.
+      </text>
+      <rect x="580" y="6" width="150" height="32" rx="4" fill="url(#goldCapGrad)"/>
+      <text x="655" y="26" font-family="'Manrope', sans-serif" font-size="10.5" fill="#0C1726" font-weight="700" text-anchor="middle" letter-spacing="1">ACCESS DATA ROOM</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chassisGradHoro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14243A"/>
+      <stop offset="60%" stop-color="#0E1B2D"/>
+      <stop offset="100%" stop-color="#09121E"/>
+    </linearGradient>
+    <linearGradient id="goldHoroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E7CD"/>
+      <stop offset="40%" stop-color="#B69A65"/>
+      <stop offset="80%" stop-color="#8F7442"/>
+      <stop offset="100%" stop-color="#6E562D"/>
+    </linearGradient>
+    <radialGradient id="dialHoroDepth" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E3553"/>
+      <stop offset="65%" stop-color="#14243A"/>
+      <stop offset="100%" stop-color="#0A1422"/>
+    </radialGradient>
+    <filter id="softShadowHoro" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Canvas -->
+  <rect width="900" height="580" fill="#0A1422"/>
+
+  <!-- Blueprint Lines -->
+  <g stroke="#B69A65" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="90" x2="900" y2="90"/>
+    <line x1="0" y1="490" x2="900" y2="490"/>
+    <line x1="90" y1="0" x2="90" y2="580"/>
+    <line x1="810" y1="0" x2="810" y2="580"/>
+  </g>
+
+  <!-- Chassis Frame -->
+  <g transform="translate(45, 35)" filter="url(#softShadowHoro)">
+    <rect width="810" height="510" rx="14" fill="url(#chassisGradHoro)" stroke="#B69A65" stroke-opacity="0.28" stroke-width="1.2"/>
+    
+    <!-- Top Bar -->
+    <path d="M 0 14 C 0 6.268 6.268 0 14 0 L 796 0 C 803.732 0 810 6.268 810 14 L 810 44 L 0 44 Z" fill="#0C1726"/>
+    <line x1="0" y1="44" x2="810" y2="44" stroke="#B69A65" stroke-opacity="0.18" stroke-width="1"/>
+    
+    <!-- Window Traffic Dots -->
+    <circle cx="28" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="44" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="60" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+
+    <!-- URL Pill -->
+    <rect x="235" y="11" width="340" height="22" rx="11" fill="#14243A" stroke="#B69A65" stroke-opacity="0.22" stroke-width="0.8"/>
+    <text x="405" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85" text-anchor="middle" letter-spacing="1.5">aura-horlogerie.ch // 3D-CONFIG</text>
+
+    <!-- Concept Study Stamp Badge -->
+    <rect x="660" y="11" width="128" height="22" rx="4" fill="#B69A65" fill-opacity="0.12" stroke="#B69A65" stroke-opacity="0.35" stroke-width="0.8"/>
+    <text x="724" y="25" font-family="'Manrope', sans-serif" font-size="7.5" fill="#B69A65" font-weight="700" text-anchor="middle" letter-spacing="1">CONCEPT ARCHIVE</text>
+
+    <!-- Navigation Line -->
+    <g transform="translate(40, 75)">
+      <text x="0" y="14" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EA" letter-spacing="4">AURA HAUTE HORLOGERIE</text>
+      <text x="730" y="14" font-family="'Manrope', sans-serif" font-size="9.5" fill="#B69A65" text-anchor="end" letter-spacing="2">EDITION № 08 / 25</text>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#B69A65" stroke-opacity="0.15" stroke-width="1"/>
+    </g>
+
+    <!-- Left Column: Editorial Product Information -->
+    <g transform="translate(40, 140)">
+      <text x="0" y="14" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" letter-spacing="2.5" font-weight="600">[ 01 // CALIBRE AEROSPACE ]</text>
+      
+      <text x="0" y="60" font-family="'Cormorant Garamond', serif" font-size="46" fill="#F5F2EA" font-weight="400">Titanium</text>
+      <text x="0" y="105" font-family="'Cormorant Garamond', serif" font-size="46" fill="url(#goldHoroGrad)" font-style="italic" font-weight="400">Chronograph Tourbillon</text>
+      
+      <text x="0" y="145" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300" line-height="1.6">
+        Hand-assembled Swiss mechanical movement calibrated to 0.02s deviation.
+      </text>
+      <text x="0" y="168" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300">
+        Features real-time 60fps WebGL configurator and private allocation protocol.
+      </text>
+
+      <!-- Configurator Selector Bar -->
+      <g transform="translate(0, 205)">
+        <rect x="0" y="0" width="165" height="42" rx="6" fill="#14243A" stroke="#B69A65" stroke-opacity="0.5" stroke-width="1"/>
+        <circle cx="24" cy="21" r="8" fill="#0C1726" stroke="#B69A65" stroke-width="1.5"/>
+        <text x="44" y="26" font-family="'Manrope', sans-serif" font-size="11.5" fill="#F5F2EA" font-weight="500">Midnight Navy Dial</text>
+
+        <rect x="180" y="0" width="165" height="42" rx="6" fill="#0E1B2D" stroke="#B69A65" stroke-opacity="0.25" stroke-width="1"/>
+        <circle cx="204" cy="21" r="8" fill="url(#goldHoroGrad)"/>
+        <text x="224" y="26" font-family="'Manrope', sans-serif" font-size="11.5" fill="#D3CABE">Antique Gold Bezel</text>
+      </g>
+
+      <!-- Investment & CTA -->
+      <g transform="translate(0, 285)">
+        <text x="0" y="22" font-family="'Cormorant Garamond', serif" font-size="32" fill="url(#goldHoroGrad)" font-weight="600">CHF 48,000</text>
+        <text x="175" y="20" font-family="'Manrope', sans-serif" font-size="9" fill="#8C9AA8" letter-spacing="1">VAT &amp; INSURANCE INCL.</text>
+        
+        <rect x="245" y="-3" width="140" height="36" rx="4" fill="url(#goldHoroGrad)"/>
+        <text x="315" y="20" font-family="'Manrope', sans-serif" font-size="10.5" fill="#0E1B2D" font-weight="700" text-anchor="middle" letter-spacing="1.5">RESERVE PIECE</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Precision Horology Timepiece Dial -->
+    <g transform="translate(585, 290)">
+      <circle cx="0" cy="0" r="155" fill="url(#dialHoroDepth)" stroke="#B69A65" stroke-opacity="0.4" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="148" fill="none" stroke="#B69A65" stroke-opacity="0.18" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="135" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.65" stroke-width="1.8"/>
+
+      <!-- Hour Tick Marks -->
+      <g stroke="url(#goldHoroGrad)" stroke-width="1.6" stroke-linecap="round">
+        <line x1="0" y1="-128" x2="0" y2="-112"/>
+        <line x1="128" y1="0" x2="112" y2="0"/>
+        <line x1="0" y1="128" x2="0" y2="112"/>
+        <line x1="-128" y1="0" x2="-112" y2="0"/>
+        
+        <line x1="88" y1="-88" x2="78" y2="-78" stroke-width="1"/>
+        <line x1="-88" y1="-88" x2="-78" y2="-78" stroke-width="1"/>
+        <line x1="88" y1="88" x2="78" y2="78" stroke-width="1"/>
+        <line x1="-88" y1="88" x2="-78" y2="78" stroke-width="1"/>
+      </g>
+
+      <!-- Chronograph Subdials -->
+      <circle cx="-48" cy="0" r="32" fill="#14243A" stroke="#B69A65" stroke-opacity="0.4" stroke-width="1"/>
+      <line x1="-48" y1="0" x2="-35" y2="-14" stroke="#B69A65" stroke-width="1.2"/>
+      
+      <circle cx="48" cy="0" r="32" fill="#14243A" stroke="#B69A65" stroke-opacity="0.4" stroke-width="1"/>
+      <line x1="48" y1="0" x2="60" y2="12" stroke="#B69A65" stroke-width="1.2"/>
+
+      <circle cx="0" cy="52" r="26" fill="#14243A" stroke="#B69A65" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="0" y="56" font-family="'Manrope', sans-serif" font-size="8.5" fill="#D3CABE" opacity="0.8" text-anchor="middle">24H</text>
+
+      <!-- Hands -->
+      <line x1="0" y1="10" x2="48" y2="-55" stroke="url(#goldHoroGrad)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="12" x2="-40" y2="-96" stroke="#F5F2EA" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="22" x2="75" y2="70" stroke="#E5D3AF" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="6" fill="#B69A65"/>
+      <circle cx="0" cy="0" r="2.5" fill="#0A1422"/>
+    </g>
+  </g>
+</svg>

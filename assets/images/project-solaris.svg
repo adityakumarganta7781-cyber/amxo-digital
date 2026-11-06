@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chassisGradAero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14243A"/>
+      <stop offset="60%" stop-color="#0E1B2D"/>
+      <stop offset="100%" stop-color="#09121E"/>
+    </linearGradient>
+    <linearGradient id="goldAeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E7CD"/>
+      <stop offset="45%" stop-color="#B69A65"/>
+      <stop offset="100%" stop-color="#7B5F2E"/>
+    </linearGradient>
+    <filter id="shadowAero" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="580" fill="#0A1422"/>
+
+  <g stroke="#B69A65" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="90" x2="900" y2="90"/>
+    <line x1="0" y1="490" x2="900" y2="490"/>
+    <line x1="90" y1="0" x2="900" y2="0"/>
+    <line x1="810" y1="0" x2="810" y2="580"/>
+  </g>
+
+  <!-- Browser Chassis -->
+  <g transform="translate(45, 35)" filter="url(#shadowAero)">
+    <rect width="810" height="510" rx="14" fill="url(#chassisGradAero)" stroke="#B69A65" stroke-opacity="0.28" stroke-width="1.2"/>
+    
+    <path d="M 0 14 C 0 6.268 6.268 0 14 0 L 796 0 C 803.732 0 810 6.268 810 14 L 810 44 L 0 44 Z" fill="#0C1726"/>
+    <line x1="0" y1="44" x2="810" y2="44" stroke="#B69A65" stroke-opacity="0.18" stroke-width="1"/>
+    
+    <circle cx="28" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="44" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+    <circle cx="60" cy="22" r="5" fill="#B69A65" fill-opacity="0.4"/>
+
+    <rect x="235" y="11" width="340" height="22" rx="11" fill="#14243A" stroke="#B69A65" stroke-opacity="0.22" stroke-width="0.8"/>
+    <text x="405" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85" text-anchor="middle" letter-spacing="1.5">solarismobility.aero // AIRFRAME-01</text>
+
+    <rect x="660" y="11" width="128" height="22" rx="4" fill="#B69A65" fill-opacity="0.12" stroke="#B69A65" stroke-opacity="0.35" stroke-width="0.8"/>
+    <text x="724" y="25" font-family="'Manrope', sans-serif" font-size="7.5" fill="#B69A65" font-weight="700" text-anchor="middle" letter-spacing="1">CONCEPT ARCHIVE</text>
+
+    <!-- Header Section -->
+    <g transform="translate(40, 75)">
+      <text x="0" y="14" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EA" letter-spacing="4">SOLARIS HYPERSONIC eVTOL</text>
+      <text x="730" y="14" font-family="'Manrope', sans-serif" font-size="9.5" fill="#B69A65" text-anchor="end" letter-spacing="2">AIRFRAME PROTOCOL</text>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#B69A65" stroke-opacity="0.15" stroke-width="1"/>
+    </g>
+
+    <!-- Left Column: Aerodynamics & Mission Stats -->
+    <g transform="translate(40, 140)">
+      <text x="0" y="14" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" letter-spacing="2.5" font-weight="600">[ 05 // ZERO-EMISSION AERODYNAMICS ]</text>
+      
+      <text x="0" y="60" font-family="'Cormorant Garamond', serif" font-size="46" fill="#F5F2EA" font-weight="400">Pure Quietude.</text>
+      <text x="0" y="105" font-family="'Cormorant Garamond', serif" font-size="46" fill="url(#goldAeroGrad)" font-style="italic" font-weight="400">Mach 0.85 Electric.</text>
+
+      <text x="0" y="145" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300">
+        Interactive 3D airframe configurator, private route reservation system,
+      </text>
+      <text x="0" y="168" font-family="'Manrope', sans-serif" font-size="13" fill="#D3CABE" font-weight="300">
+        and bespoke high-ticket acquisition funnel for executive air mobility.
+      </text>
+
+      <!-- Aerodynamic Spec Grid -->
+      <g transform="translate(0, 205)">
+        <rect x="0" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="16" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">MISSION RANGE</text>
+        <text x="16" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="#F5F2EA" font-weight="600">480 NM</text>
+
+        <rect x="154" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="170" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">RECHARGE TIME</text>
+        <text x="170" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="url(#goldAeroGrad)" font-weight="600">12 MIN</text>
+
+        <rect x="308" y="0" width="138" height="78" rx="6" fill="#0C1726" stroke="#B69A65" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="324" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" opacity="0.85">ACOUSTIC PROFILE</text>
+        <text x="324" y="60" font-family="'Cormorant Garamond', serif" font-size="30" fill="#F5F2EA" font-weight="600">&lt; 42 dBA</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Aerodynamic eVTOL Vector HUD -->
+    <g transform="translate(515, 145)">
+      <rect x="0" y="0" width="255" height="275" rx="8" fill="#0B1522" stroke="#B69A65" stroke-opacity="0.35" stroke-width="1"/>
+      <text x="20" y="26" font-family="'Manrope', sans-serif" font-size="9" fill="#B69A65" letter-spacing="1">RADAR TELEMETRY // HUD</text>
+
+      <g transform="translate(128, 140)">
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#B69A65" stroke-opacity="0.18"/>
+        <circle cx="0" cy="0" r="48" fill="none" stroke="#B69A65" stroke-opacity="0.28"/>
+        
+        <path d="M 0 -65 Q 6 -20 8 20 Q 0 55 -8 20 Q -6 -20 0 -65 Z" fill="#14243A" stroke="url(#goldAeroGrad)" stroke-width="1.6"/>
+        <polygon points="0,-15 72,25 66,35 12,25 0,30 -12,25 -66,35 -72,25" fill="#1B2F4A" stroke="url(#goldAeroGrad)" stroke-width="1.3"/>
+        <polygon points="0,-42 28,-30 25,-25 0,-32 -25,-25 -28,-30" fill="url(#goldAeroGrad)" stroke="#F5F2EA" stroke-width="0.5"/>
+        <ellipse cx="0" cy="-30" rx="3.5" ry="12" fill="#F5F2EA" opacity="0.9"/>
+        
+        <circle cx="36" cy="30" r="3.5" fill="#B69A65"/>
+        <circle cx="-36" cy="30" r="3.5" fill="#B69A65"/>
+      </g>
+    </g>
+
+    <!-- Bottom Strip -->
+    <g transform="translate(40, 455)">
+      <line x1="0" y1="0" x2="730" y2="0" stroke="#B69A65" stroke-opacity="0.15" stroke-width="1"/>
+      <text x="0" y="24" font-family="'Manrope', sans-serif" font-size="11.5" fill="#D3CABE">
+        High-ticket acquisition funnel with integrated slot reservation and verified identity protocol.
+      </text>
+      <rect x="580" y="6" width="150" height="32" rx="4" fill="url(#goldAeroGrad)"/>
+      <text x="655" y="26" font-family="'Manrope', sans-serif" font-size="10.5" fill="#0C1726" font-weight="700" text-anchor="middle" letter-spacing="1">RESERVE FLIGHT</text>
+    </g>
+  </g>
+</svg>
